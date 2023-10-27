@@ -16,13 +16,11 @@ sendInput.addEventListener('keydown', function(event) {
         sendInput.value = '';
     }
 
-    const elements = document.querySelectorAll('.text');
-    for (let item of elements) {
-        item.addEventListener('click', function() {
-            item.classList.toggle('done');
 
-        });
-    }
+    newListItem.addEventListener('click', function() {
+        newListItem.classList.toggle('done');
+
+    })
 });
 
 
